@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #333740;
+}
+
+.part-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 90%;
+    width: 90%;
+    background-color: #333740;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 100px;
+}
+
+.part-2 {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    background-color: rgba(235, 133, 10, 0.347);
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-image: url(https://wallpaperaccess.com/full/2593066.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card {
+    height: 100%;
+    width: 50%;
+    border-top-left-radius: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333740;
+    color: aliceblue;
+}
+
+.SignUp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 50%;
+    background-color: rgba(244, 207, 20, 0.349);
+    border-radius: 40px;
+    box-shadow: 10px 10px 50px rgb(0, 0, 0), inset 10px 80px 90px grey;
+}
+
+.SignUp a {
+    color: black;
+}
+
+.SignUp h1 {
+    color: black;
+}
+
+#user_detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 60px;
+    width: 80%;
+}
+
+#user_detail input {
+    margin-bottom: 10px;
+    height: 34px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+}
+
+#user_detail button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 45px;
+    width: 59%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+#login_btn {
+    height: 30px;
+    width: 100px;
+    margin-top: 15px;
+    border-radius: 50px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}

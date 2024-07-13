@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+</head>
+<body>
+    <div class="main_container">
+        <div class="mainbox">
+            <div class="part1">
+                <img id="profile_image" src="https://png.pngtree.com/png-vector/20220621/ourmid/pngtree-user-avatar-icon-profile-silhouette-png-image_5252378.png" alt="">
+                <h1 id="Username">No Name</h1>
+                <div class="functionalities">
+                    <button id="Home">Home</button>
+                    <button id="Signout">Signout</button>
+                </div>
+            </div>
+              
+            <div class="part2">
+                <h1>Account Setting</h1>
+                <div class="info">
+                
+
+                <span>
+                    
+                  <input type="text" placeholder="First Name" id="First_Name">
+                </span>
+                <span>
+                    
+                  <input type="text" placeholder="Last Name" id="last_Name">
+                </span>
+                <span>
+                    
+                  <input type="text" placeholder="Email Address" id="email">
+                </span>
+            </div>
+            <div class="info2">
+                
+
+                <span>
+                    
+                  <input type="password" placeholder="Current Password" id="Current_Password">
+                </span>
+                <span>
+                    
+                    <input type="password" placeholder="New Password" id="New_Password">
+                </span>
+                <span>
+                    
+                    <input type="password" placeholder=" Confirm New Password" id="Confirm_New_Password">
+                </span>
+            </div>
+            <div class="info3">
+                
+
+                <span>
+                    
+                  <input type="Current Address" placeholder="Current Address" id="Current_Address">
+                </span>
+                <span>
+                    
+                    <input type="New Address" placeholder="New Address" id="New_Address">
+                </span>
+                <span>
+                    
+                    <input type="number" placeholder="Phone" id="phone">
+                </span>
+            </div>
+
+
+
+                <span>
+                    
+                <button id="update">Update</button>
+                </span>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore-compat.js"></script>
+    <script src="../firebase/index.js"></script>
+    <script src="./App.js"></script>
+</body>
+</html>
