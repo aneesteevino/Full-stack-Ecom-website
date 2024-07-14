@@ -59,13 +59,15 @@ SignUp_btn.addEventListener('click',async()=>{
                 }
               }).showToast(); 
           }
-            localStorage.setItem(`users : `,userID)
+            localStorage.setItem(`users`,userID)
 
             const userData={
                 username:username.value,
+              
                 email:email.value,
                 password:password.value,
-                userID:userID.uid,
+                userID:userID,
+
                 phone:'+92...',
                 address:'unknown',
                 profileimg:"https://www.disneyplusinformer.com/wp-content/uploads/2021/06/Luca-Profile-Avatars-3.png"

@@ -32,7 +32,7 @@ login_btn.addEventListener('click',async()=>{
 
           const res= await firebase.auth().signInWithEmailAndPassword(email.value, password.value)
           console.log(res.user.uid)
-          localStorage.setItem("user",res.user.uid)
+          localStorage.setItem("users",res.user.uid)
           Toastify({
             text: "login sucessfull",
             className: "info",
@@ -57,7 +57,7 @@ login_btn.addEventListener('click',async()=>{
                 }
               }).showToast(); 
          }
-    // window.open('../home/index.html')
+    window.location.href="../home/index.html"
 }
 
 )

@@ -1,12 +1,14 @@
-const user=localStorage.getItem('user')
+const user=localStorage.getItem('users')
 if(user==null){
-    window.open('../login/index.html')
+   window.location.href="../Signup/index.html"
 }
 
 
 const Signout=document.getElementById('SignOut')
 Signout.addEventListener('click',()=>{
+    localStorage.removeItem('users')
     window.open('../login/index.html')
+
 })
 
 

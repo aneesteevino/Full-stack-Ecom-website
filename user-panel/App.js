@@ -3,9 +3,10 @@ const Home = document.getElementById('Home');
 Home.addEventListener('click', () => {
     window.open('../home/index.html');
 });
-
+const user=localStorage.getItem('user')
 const Signout = document.getElementById('Signout');
 Signout.addEventListener('click', () => {
+    localStorage.removeItem('users')
     window.open('../login/index.html');
 });
 
@@ -22,15 +23,16 @@ const Current_Address = document.getElementById('Current_Address');
 const New_Address = document.getElementById('New_Address');
 const phone = document.getElementById('phone');
 
-// Store user ID in local storage
-const userID = 'userID'; // Replace with actual user ID
-localStorage.setItem('userID', userID);
+const userID=localStorage.getItem('users')
 
 async function UserAllData() {
     try {
         const res = await firebase.firestore().collection('users').doc(userID).get();
         const userData = res.data();
         console.log(userData);
+        profile_image.src=userData['profileimg']
+        Username.innerHTML=userData['username']
+        First_Name .innerHTML=userData[]
 
         // Update profile information elements with user data
         if (userData) {
