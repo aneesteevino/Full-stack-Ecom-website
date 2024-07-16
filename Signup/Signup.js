@@ -63,13 +63,17 @@ SignUp_btn.addEventListener('click',async()=>{
 
             const userData={
                 username:username.value,
-              
+                First_Name:'',
+                last_Name:'',
                 email:email.value,
-                password:password.value,
+                Current_Password:password.value,
+                // New_Password :Current_Password.value.up,
+                Confirm_New_Password:password.value,
                 userID:userID,
-
+                
                 phone:'+92...',
-                address:'unknown',
+                Current_Address:'',
+                New_Address:'',
                 profileimg:"https://www.disneyplusinformer.com/wp-content/uploads/2021/06/Luca-Profile-Avatars-3.png"
             }
           try{
@@ -93,7 +97,7 @@ SignUp_btn.addEventListener('click',async()=>{
               }).showToast(); 
 
           }
-          window.open('../home/index.html')
+          window.location.href='../home/index.html'
          
 })
 

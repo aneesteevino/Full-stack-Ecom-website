@@ -1,5 +1,5 @@
 const user=localStorage.getItem('users')
-if(user==null){
+if(user==''){
    window.location.href="../Signup/index.html"
 }
 

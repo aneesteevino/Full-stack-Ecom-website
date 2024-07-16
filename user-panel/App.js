@@ -31,8 +31,20 @@ async function UserAllData() {
         const userData = res.data();
         console.log(userData);
         profile_image.src=userData['profileimg']
-        Username.innerHTML=userData['username']
-        First_Name .innerHTML=userData[]
+        Username.value=userData['username']
+        First_Name.value=userData['First_Name']
+        last_Name.value=userData['last_Name']
+        email.value=userData['email']
+        Current_Password.value=userData['Current_Password']
+        New_Password.value=userData['New_Password']
+        Confirm_New_Password.value=userData['Confirm_New_Password']
+        Current_Address.value=userData['Current_Address']
+        New_Address.value=userData['New_Address']
+        phone.value=userData['phone']
+
+
+
+  
 
         // Update profile information elements with user data
         if (userData) {

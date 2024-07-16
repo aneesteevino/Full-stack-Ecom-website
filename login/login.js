@@ -43,7 +43,7 @@ login_btn.addEventListener('click',async()=>{
 
 
           setTimeout(()=>{
-            window.open("../home/index.html")
+            window.location.href="../home/index.html"
           },1500)
 
 
