@@ -1,13 +1,13 @@
 // Event listeners for navigation buttons
 const Home = document.getElementById('Home');
 Home.addEventListener('click', () => {
-    window.open('../home/index.html');
+    window.location.href='../home/index.html';
 });
 const user=localStorage.getItem('user')
 const Signout = document.getElementById('Signout');
 Signout.addEventListener('click', () => {
     localStorage.removeItem('users')
-    window.open('../login/index.html');
+    window.location.href='../login/index.html';
 });
 
 // Profile information elements

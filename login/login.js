@@ -1,7 +1,7 @@
 const SignUp_btn=document.getElementById('SignUp_btn')
 
 SignUp_btn.addEventListener('click',()=>{
-    window.open('../Signup/index.html')
+    window.location.href='../Signup/index.html'
 
 })
 
@@ -17,7 +17,7 @@ const password=document.getElementById('password')
 const login_btn=document.getElementById('login_btn')
 
 login_btn.addEventListener('click',async()=>{
-    if(email.value===''||password.value===''){
+    if(Email.value===''||password.value===''){
         Toastify({
             text: "Please fill all the fields",
             className: "info",
@@ -30,7 +30,7 @@ login_btn.addEventListener('click',async()=>{
 
     try{
 
-          const res= await firebase.auth().signInWithEmailAndPassword(email.value, password.value)
+          const res= await firebase.auth().signInWithEmailAndPassword(Email.value, password.value)
           console.log(res.user.uid)
           localStorage.setItem("users",res.user.uid)
           Toastify({

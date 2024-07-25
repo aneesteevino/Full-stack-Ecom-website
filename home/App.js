@@ -7,7 +7,7 @@ if(user==''){
 const Signout=document.getElementById('SignOut')
 Signout.addEventListener('click',()=>{
     localStorage.removeItem('users')
-    window.open('../login/index.html')
+    window.location.href='../login/index.html'
 
 })
 
@@ -16,12 +16,12 @@ Signout.addEventListener('click',()=>{
 let profilebtn=document.getElementById('profile')
 
 profilebtn.addEventListener('click',()=>{
-    window.open('../user-panel/index.html')
+    window.location.href='../user-panel/index.html'
 
    
 })
 
 const home=document.getElementById('home')
 home.addEventListener('click',()=>{
-open('../home/index.html')
+window.location.href='../home/index.html'
 })

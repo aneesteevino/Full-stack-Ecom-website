@@ -1,7 +1,7 @@
 const login_btn=document.getElementById('login_btn')
 
 login_btn.addEventListener('click',()=>{
-    window.open('../login/index.html')
+    window.location.href='../login/index.html'
 })
 
 // const SignUp_btn=document.getElementById('SignUp_btn')
